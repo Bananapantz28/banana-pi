@@ -1,0 +1,102 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #232327;
+    color: rgb(235, 229, 229);
+}
+
+/*Dark Mode Options*/
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #080808;
+        color: rgb(235, 229, 229);
+    }
+}
+
+main {
+    margin: 0% 15% 0% 15%;
+}
+
+.center {
+    text-align: center;
+    margin: auto;
+}
+
+h1 {
+    font-size: 36px;
+}
+h3 {
+    font-size: 22px;
+    text-align: center;
+}
+
+a {
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    text-decoration: none;
+}
+
+td, th {
+    padding: 10px 10px 10px 10px;
+}
+table.table-bar {
+    margin: auto;
+    padding: 0px;
+    background-color: #17171a;
+    border-radius: 50px;
+    width: 90%;
+}
+
+.fill {
+    width: 90%;
+    margin: auto;
+}
+
+td > img {
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px black;
+    width: 54px;
+    height: 54px;
+}
+td {
+    text-shadow: 2px 2px 10px rgb(8, 8, 8);
+    
+}
+
+button {
+    color: white;
+    background-color: rgb(14, 12, 12);
+    border: 0px solid black;
+    border-radius: 25px;
+    padding: 10px 15px 10px 15px;
+    transition: ease-in-out .25s;
+    box-shadow: 3px 3px 10px rgb(15, 15, 15);
+}
+button:hover {
+    color: black;
+    background-color: whitesmoke;
+}
+button:active {
+    box-shadow: 0px 0px 0px black;
+}
+.tile-button {
+    background-color: rgb(182, 44, 44);
+    width: 70%;
+    margin-top: 16%;
+}
+
+.hash {
+    font-size: 10px;
+}
+.border-left {
+    border-top-left-radius: 30% 50%;
+    border-bottom-left-radius: 30% 50%;
+}
+.border-right {
+    border-top-right-radius: 22% 50%;
+    border-bottom-right-radius: 22% 50%;
+}
+
+
+.table-list {
+    margin: 30px auto 30px auto;
+}
