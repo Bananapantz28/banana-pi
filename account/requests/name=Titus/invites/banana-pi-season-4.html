@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html id="invite-page">
+    <head>
+        <title>You're invited to Banana Pi!</title>
+        <link rel="stylesheet" type="text/css" href="../../../../styles/style.css">
+        <link rel="icon" type="image/x-icon" href="../../../../favicon.webp">
+        <style>
+            body {
+                overflow: hidden;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <!--<table>
+                <tr>
+                    <td>Home</td>
+                    <td>World Downloads</td>
+                </tr>
+            </table>
+        -->
+
+            <table class="center">
+                <tr>
+                    <td>
+                        <a href="../../../../index.html"><img src="../../../../favicon.webp"></a>
+                    </td>
+                    <td>
+                        <h1>Banana Pi Web Services</h1>
+                    </td>
+                </tr>
+            </table>
+        </header>
+        <main>
+            <h1 class="center text-banner">Titus, you have been invited to Banana Pi Season 4!</h1>
+            <br>
+            <br>
+            <p class="center">Copy this ip address into Minecraft to Start playing:</p>
+            <br>
+            <div class="center">
+            <!-- The text field -->
+                <input type="text" value="135.148.15.35:21845" id="ip-text">
+                
+                <!-- The button used to copy the text -->
+                <button onclick="copyText()">Copy text</button>
+            </div>
+
+            <a target="_blank" href="https://discord.gg/ck4q4fkQ"><button id="corner-button">Join Banana Pi Discord Server</button></a>
+
+        </main>
+        <script src="../../../../js/copy-text.js"></script>
+    </body>
+</html>

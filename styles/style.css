@@ -1,19 +1,28 @@
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: #232327;
     color: rgb(235, 229, 229);
-}
-
-/*Dark Mode Options*/
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: #080808;
-        color: rgb(235, 229, 229);
-    }
 }
 
 main {
     margin: 0% 15% 0% 15%;
+}
+#invite-page {
+    background-image: url("../images/invite-background.png");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    height: 1080px; /* You must set a specified height */
+    background-attachment: fixed;
+    animation: page-fade-in 1s ease-in 0s;
+}
+
+@keyframes page-fade-in {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
 }
 
 .center {
@@ -45,6 +54,15 @@ table.table-bar {
     border-radius: 50px;
     width: 90%;
 }
+#corner-button {
+position: fixed;
+bottom: 15px;
+right: 15px;
+background-color: #5865F2;
+font-family: "Uni Sans Heavy Italic";
+    
+    
+}
 
 .fill {
     width: 90%;
@@ -64,7 +82,7 @@ td {
 
 button {
     color: white;
-    background-color: rgb(14, 12, 12);
+    background-color: rgb(20, 23, 26);
     border: 0px solid black;
     border-radius: 25px;
     padding: 10px 15px 10px 15px;
@@ -84,6 +102,12 @@ button:active {
     margin-top: 16%;
 }
 
+input {
+    color: white;
+    background-color: rgb(20, 23, 26);
+    padding: 5px;
+}
+
 .hash {
     font-size: 10px;
 }
@@ -99,4 +123,25 @@ button:active {
 
 .table-list {
     margin: 30px auto 30px auto;
+}
+
+.text-banner {
+    margin-top: 16%;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 25px;
+    width: 20%;
+}
+
+/*Custom Fonts*/
+
+@font-face {
+    font-family: "Uni Sans Heavy";
+    src: url("../fonts/Uni-Sans-Heavy.otf");
+}
+@font-face {
+    font-family: "Uni Sans Heavy Italic";
+    src: url("../fonts/Uni-Sans-Heavy-Italic.otf");
 }
